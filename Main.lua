@@ -1,0 +1,16 @@
+local Child=dofile("Child.lua")
+local c=Child:new()
+c:setBalance(100)
+c:test()
+print(c.balance)
+
+local d=Child:new()
+d:setBalance(2000)
+d:test()
+d:test1()
+print(c)
+print(d)
+
+local Parent = dofile("Parent.lua")
+local c=Parent:new()
+c:test()
